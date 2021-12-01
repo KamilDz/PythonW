@@ -1,0 +1,11 @@
+from numpy import *
+import matplotlib.pyplot as plt
+def y(x):
+    return sin(10*x)*sin(3*x)/(x**2)
+plt.plot(x, y, 'ro-')
+plt.xlabel('x')  
+plt.ylabel('y') 
+plt.title('Zavdanya 7')  
+plt.legend(['sin(10*x)*sin(3*x)/(x**2)),'], loc = 'upper right')
+plt.grid()
+plt.show()
