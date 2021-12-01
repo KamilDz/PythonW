@@ -1,0 +1,27 @@
+import math 
+
+def f1(x)
+    return 4x2+8x3+2.5x2x-10
+def f2(x)
+    return 8x+24x2+5x
+def metHord(a, b)
+    
+    if f1(a)  f2(a)  0
+        x0 = a
+        xi = b
+    else
+        x0 = b
+        xi = a
+        
+    xi1 = xi - (xi - x0)  (f1(xi) - f1(x0))  f1(xi)
+    
+    while abs(xi1 - xi) = 0.01
+        xi = xi1
+        xi1 = xi - (xi - x0)  (f1(xi) - f1(x0))  f1(xi)
+            
+    xk = f1(xi1)
+    
+    print('Hord Metod ', xk)
+    return xk
+    
+metHord(-23, 5)
