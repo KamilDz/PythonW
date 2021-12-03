@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import numpy as np 
+from math import cos 
+from math import sin
+
+def f(x):
+  result =4*cos(4*x)
+  return result
+x = np.linspace(0, 10, 50)
+y = np.cos(2*x) + 2*x
+y2 = 64*np.cos(4*x)
+y3 = f(0)
+
+plt.title('Taylor expansion')
+
+plt.plot(x,y, label ='sin(4*x)')
+plt.plot(x,y2, label = 'x=0')
+plt.legend()
+plt.show()
